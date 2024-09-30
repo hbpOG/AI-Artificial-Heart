@@ -6,28 +6,61 @@
     <title>AI-Powered Artificial Heart Pitch</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add custom styles for collapsible sections */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
         .collapsible {
-            background-color: #f1f1f1;
-            color: black;
+            background-color: #007bff;
+            color: white;
             cursor: pointer;
             padding: 10px;
             width: 100%;
             border: none;
             text-align: left;
             outline: none;
-            font-size: 15px;
+            font-size: 16px;
+            border-radius: 5px;
         }
-
-        .active, .collapsible:hover {
-            background-color: #ccc;
-        }
-
         .content {
-            padding: 0 18px;
             display: none;
-            overflow: hidden;
-            background-color: white;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #1e1e1e;
         }
     </style>
 </head>
@@ -36,107 +69,70 @@
         <h1>AI-Powered Artificial Heart</h1>
         <p>Presented by R.G.</p>
     </header>
-
-    <section id="market-need">
-        <h2>Market Need</h2>
-        <button class="collapsible">Overview of Heart Diseases</button>
-        <div class="content">
-            <p>Detailed statistics and analysis...</p>
-        </div>
-        <button class="collapsible">Impact of Heart Disease</button>
-        <div class="content">
-            <p>Case studies and testimonials...</p>
-        </div>
-        <button class="collapsible">Importance of Innovation</button>
-        <div class="content">
-            <p>Current treatments and trends...</p>
-        </div>
-        <button class="collapsible">Future Projections</button>
-        <div class="content">
-            <p>Projections for heart disease cases...</p>
-        </div>
-        <button class="collapsible">Supporting Research</button>
-        <div class="content">
-            <p>Links to research papers...</p>
-        </div>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This project aims to develop an AI-powered artificial heart that can monitor, learn, and adapt to heart rhythms. Our device is designed to address the urgent need for innovative solutions in the realm of cardiac care.</p>
     </section>
-
+    <section id="technology">
+        <h2>Technology Overview</h2>
+        <p>The AI chip will detect abnormalities in heart rhythms and make instant adjustments to heart function. By integrating advanced machine learning algorithms, the device will learn from the patient's unique heart patterns, optimizing performance over time.</p>
+    </section>
+    <section id="market">
+        <h2>Market Need</h2>
+        <p>Heart diseases are a leading cause of death globally. This innovation addresses a critical need by offering a smart solution to heart management, potentially reducing mortality rates significantly.</p>
+    </section>
     <section id="product-details">
         <h2>Product Details</h2>
         <button class="collapsible">Types of Products</button>
         <div class="content">
-            <p>Implantable AI heart devices...</p>
-            <p>Wearable heart monitors...</p>
-            <p>Smart cardiac rehabilitation systems...</p>
+            <ul>
+                <li>Implantable AI heart devices</li>
+                <li>Wearable heart monitors</li>
+                <li>Smart cardiac rehabilitation systems</li>
+            </ul>
         </div>
         <button class="collapsible">Estimated Pricing</button>
         <div class="content">
-            <p>Breakdown of costs...</p>
+            <ul>
+                <li>Implantable devices: ₹10 lakhs - ₹15 lakhs</li>
+                <li>Wearable devices: ₹20,000 - ₹50,000</li>
+                <li>Rehabilitation systems: ₹5 lakhs - ₹7 lakhs</li>
+            </ul>
         </div>
         <button class="collapsible">Availability</button>
         <div class="content">
-            <p>Distribution channels...</p>
-        </div>
-        <button class="collapsible">Supporting Research and Resources</button>
-        <div class="content">
-            <p>Links to studies...</p>
+            <p>These products will be available through hospitals, online health platforms, and partnerships with healthcare providers.</p>
         </div>
     </section>
-
     <section id="how-it-works">
         <h2>How It Works</h2>
-        <button class="collapsible">Mechanism of the AI-Powered Heart</button>
+        <button class="collapsible">Mechanism of Heart</button>
         <div class="content">
-            <p>Real-time monitoring...</p>
-            <p>Adaptive learning...</p>
-            <p>Emergency response...</p>
+            <p>Explain the mechanism of the heart and why this technology is needed, including data on heart attack causes, age factors, etc.</p>
         </div>
-        <button class="collapsible">Functionality Features</button>
+        <button class="collapsible">Functionality of the AI-Powered Heart</button>
         <div class="content">
-            <p>Main features of the device...</p>
-        </div>
-        <button class="collapsible">Power and Materials</button>
-        <div class="content">
-            <p>Durability and power requirements...</p>
-        </div>
-        <button class="collapsible">Supporting Research and Literature</button>
-        <div class="content">
-            <p>Links to papers...</p>
+            <p>The AI-powered artificial heart continuously monitors the patient’s heart activity and adjusts in real-time to prevent cardiac events. It can potentially delay heart attacks by:</p>
+            <ul>
+                <li>Detecting early warning signs of irregularities</li>
+                <li>Providing feedback to the patient and healthcare providers</li>
+                <li>Adjusting medication dosages based on heart rhythms</li>
+            </ul>
         </div>
     </section>
-
-    <section id="functionality">
-        <h2>Functionality of the AI-Powered Heart</h2>
-        <button class="collapsible">Detailed Functionality</button>
-        <div class="content">
-            <p>Heart rhythm monitoring...</p>
-            <p>Data analytics...</p>
-            <p>Patient interaction...</p>
-        </div>
-        <button class="collapsible">Real-World Applications</button>
-        <div class="content">
-            <p>Examples of usage...</p>
-        </div>
-        <button class="collapsible">Future Directions</button>
-        <div class="content">
-            <p>Speculations on future advancements...</p>
-        </div>
-        <button class="collapsible">Supporting Research</button>
-        <div class="content">
-            <p>Additional links...</p>
-        </div>
+    <section id="success-rate">
+        <h2>Projected Success Rate</h2>
+        <p>With our innovative technology, we project an 81% success rate within two years, providing patients with a reliable and life-saving solution.</p>
     </section>
-
     <footer>
         <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
-
     <script>
-        const coll = document.getElementsByClassName("collapsible");
+        var coll = document.getElementsByClassName("collapsible");
         for (let i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                const content = this.nextElementSibling;
+                var content = this.nextElementSibling;
                 if (content.style.display === "block") {
                     content.style.display = "none";
                 } else {
