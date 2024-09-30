@@ -6,13 +6,28 @@
     <title>AI-Powered Artificial Heart Pitch</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .hidden {
-            display: none;
-        }
-        .toggle-button {
+        /* Add custom styles for collapsible sections */
+        .collapsible {
+            background-color: #f1f1f1;
+            color: black;
             cursor: pointer;
-            color: blue;
-            text-decoration: underline;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
         }
     </style>
 </head>
@@ -21,128 +36,113 @@
         <h1>AI-Powered Artificial Heart</h1>
         <p>Presented by R.G.</p>
     </header>
-    <section id="introduction">
-        <h2 class="toggle-button" onclick="toggleVisibility('intro-content')">Introduction</h2>
-        <div id="intro-content" class="hidden">
-            <p>This project aims to develop an AI-powered artificial heart that can monitor, learn, and adapt to heart rhythms. Our device is designed to address the urgent need for innovative solutions in the realm of cardiac care. With heart diseases being a leading cause of death globally, we strive to enhance patient outcomes and improve quality of life through cutting-edge technology.</p>
-            <p>Heart diseases, including coronary artery disease, heart attacks, and heart failure, account for a significant portion of healthcare costs and mortality rates worldwide. The need for innovative solutions has never been greater. By harnessing the power of artificial intelligence, we can create a device that not only mimics the functions of a natural heart but also adapts to the changing needs of patients over time.</p>
-            <p>The AI-powered artificial heart aims to be more than just a replacement organ; it will be an intelligent system capable of real-time monitoring, predictive analysis, and responsive adjustments. As heart health continues to decline due to factors like sedentary lifestyles, poor diets, and rising stress levels, our device represents a crucial advancement in cardiac medicine.</p>
+
+    <section id="market-need">
+        <h2>Market Need</h2>
+        <button class="collapsible">Overview of Heart Diseases</button>
+        <div class="content">
+            <p>Detailed statistics and analysis...</p>
+        </div>
+        <button class="collapsible">Impact of Heart Disease</button>
+        <div class="content">
+            <p>Case studies and testimonials...</p>
+        </div>
+        <button class="collapsible">Importance of Innovation</button>
+        <div class="content">
+            <p>Current treatments and trends...</p>
+        </div>
+        <button class="collapsible">Future Projections</button>
+        <div class="content">
+            <p>Projections for heart disease cases...</p>
+        </div>
+        <button class="collapsible">Supporting Research</button>
+        <div class="content">
+            <p>Links to research papers...</p>
         </div>
     </section>
-    <section id="technology">
-        <h2 class="toggle-button" onclick="toggleVisibility('technology-content')">Technology Overview</h2>
-        <div id="technology-content" class="hidden">
-            <p>The AI chip within our artificial heart is engineered to detect abnormalities in heart rhythms. It employs advanced machine learning algorithms that allow it to learn from the patient’s unique heart patterns, optimizing performance over time. The device is equipped with sensors that continuously monitor the heart's electrical activity, allowing for real-time adjustments to heart function, thereby ensuring that the heart maintains an optimal rhythm even in the presence of arrhythmias.</p>
-            <p>To achieve this, the device will integrate multiple technologies, including:</p>
-            <ul>
-                <li><strong>Advanced Sensor Technology:</strong> Sensors will measure various physiological parameters, including heart rate, rhythm, and blood pressure. These sensors will provide continuous data to the AI chip, enabling it to make informed decisions.</li>
-                <li><strong>Machine Learning Algorithms:</strong> The heart’s electrical signals will be analyzed using machine learning to identify patterns and predict potential complications. This allows for proactive adjustments to heart function.</li>
-                <li><strong>Wireless Communication:</strong> The device will be equipped with communication capabilities to transmit data to healthcare providers in real-time, ensuring timely interventions when necessary.</li>
-            </ul>
-            <p>This technological synergy aims to create a seamless integration of AI into cardiac care, paving the way for better management of heart diseases.</p>
-        </div>
-    </section>
-    <section id="market">
-        <h2 class="toggle-button" onclick="toggleVisibility('market-content')">Market Need</h2>
-        <div id="market-content" class="hidden">
-            <p>Heart diseases are one of the most significant health issues faced globally. According to the World Health Organization, cardiovascular diseases are responsible for an estimated 17.9 million deaths each year, representing 31% of all global deaths. The increase in lifestyle-related diseases, such as obesity and diabetes, alongside a sedentary lifestyle, has resulted in a rising prevalence of heart attacks and related complications.</p>
-            <p>Statistics show that individuals aged 40 and above are particularly at risk, with risk factors such as hypertension, high cholesterol, and diabetes playing significant roles in the onset of heart disease. Additionally, the emotional and psychological impacts of heart diseases cannot be understated, as they not only affect the individual but also their families and communities.</p>
-            <p>This innovation addresses a critical need by offering a smart solution to heart management. Our AI-powered artificial heart can reduce mortality rates significantly by providing continuous monitoring and immediate intervention capabilities.</p>
-            <p>Moreover, the increasing adoption of telemedicine and remote patient monitoring creates a favorable environment for the introduction of our product. As healthcare systems evolve, the demand for innovative and effective solutions for heart care is expected to grow, making this the right time for our product launch.</p>
-        </div>
-    </section>
+
     <section id="product-details">
-        <h2 class="toggle-button" onclick="toggleVisibility('product-details-content')">Product Details</h2>
-        <div id="product-details-content" class="hidden">
-            <h3>Types of Products</h3>
-            <ul>
-                <li>Implantable AI heart devices</li>
-                <li>Wearable heart monitors</li>
-                <li>Smart cardiac rehabilitation systems</li>
-            </ul>
-            <h3>Estimated Pricing</h3>
-            <ul>
-                <li>Implantable devices: ₹10 lakhs - ₹15 lakhs</li>
-                <li>Wearable devices: ₹20,000 - ₹50,000</li>
-                <li>Rehabilitation systems: ₹5 lakhs - ₹7 lakhs</li>
-            </ul>
-            <h3>Availability</h3>
-            <p>These products will be available through hospitals, online health platforms, and partnerships with healthcare providers, ensuring that they are accessible to those who need them most. The distribution strategy will focus on collaborating with medical professionals to ensure that the products meet the standards required for patient safety and efficacy.</p>
+        <h2>Product Details</h2>
+        <button class="collapsible">Types of Products</button>
+        <div class="content">
+            <p>Implantable AI heart devices...</p>
+            <p>Wearable heart monitors...</p>
+            <p>Smart cardiac rehabilitation systems...</p>
+        </div>
+        <button class="collapsible">Estimated Pricing</button>
+        <div class="content">
+            <p>Breakdown of costs...</p>
+        </div>
+        <button class="collapsible">Availability</button>
+        <div class="content">
+            <p>Distribution channels...</p>
+        </div>
+        <button class="collapsible">Supporting Research and Resources</button>
+        <div class="content">
+            <p>Links to studies...</p>
         </div>
     </section>
+
     <section id="how-it-works">
-        <h2 class="toggle-button" onclick="toggleVisibility('how-it-works-content')">How It Works</h2>
-        <div id="how-it-works-content" class="hidden">
-            <p>The AI-powered artificial heart continuously monitors the patient’s heart activity and adjusts in real-time to prevent cardiac events. The heart works by contracting and relaxing to pump blood throughout the body. This process is controlled by electrical impulses that trigger heartbeats. When these impulses are disrupted, it can lead to arrhythmias or even heart failure.</p>
-            <p>Our device can potentially delay heart attacks by:</p>
-            <ul>
-                <li><strong>Detecting early warning signs of irregularities:</strong> The AI chip will analyze data from the heart's electrical activity to identify patterns that indicate potential problems. For instance, the device can recognize variations in heart rate variability (HRV), which can be indicative of stress or impending cardiac issues.</li>
-                <li><strong>Providing feedback to the patient and healthcare providers:</strong> Real-time data transmission to medical professionals ensures that any anomalies are addressed promptly. This allows for interventions that can mitigate risks before they escalate into serious complications.</li>
-                <li><strong>Adjusting medication dosages based on heart rhythms:</strong> The device can communicate with healthcare systems to automatically adjust medications as needed, based on the patient's heart activity. This personalized approach to medication can improve treatment outcomes significantly.</li>
-            </ul>
+        <h2>How It Works</h2>
+        <button class="collapsible">Mechanism of the AI-Powered Heart</button>
+        <div class="content">
+            <p>Real-time monitoring...</p>
+            <p>Adaptive learning...</p>
+            <p>Emergency response...</p>
+        </div>
+        <button class="collapsible">Functionality Features</button>
+        <div class="content">
+            <p>Main features of the device...</p>
+        </div>
+        <button class="collapsible">Power and Materials</button>
+        <div class="content">
+            <p>Durability and power requirements...</p>
+        </div>
+        <button class="collapsible">Supporting Research and Literature</button>
+        <div class="content">
+            <p>Links to papers...</p>
         </div>
     </section>
-    <section id="mechanism-of-heart">
-        <h2 class="toggle-button" onclick="toggleVisibility('mechanism-of-heart-content')">Mechanism of the Heart</h2>
-        <div id="mechanism-of-heart-content" class="hidden">
-            <p>The human heart is a complex organ that functions as a pump to circulate blood throughout the body. It consists of four chambers: the right and left atria, and the right and left ventricles. Blood flows from the body into the right atrium, moves to the right ventricle, and is then pumped to the lungs for oxygenation. Oxygen-rich blood returns to the left atrium, flows into the left ventricle, and is pumped out to the rest of the body. This intricate process is regulated by a network of electrical impulses generated by the sinoatrial (SA) node, which serves as the natural pacemaker of the heart.</p>
-            <p>Electrical signals travel through specialized pathways in the heart, causing the muscles to contract in a coordinated manner. Any disruptions in this electrical system can lead to conditions such as atrial fibrillation, ventricular tachycardia, or complete heart block, all of which can increase the risk of heart attack and other serious complications.</p>
-            <p>The heart's structure includes:</p>
-            <ul>
-                <li><strong>Atria:</strong> The two upper chambers that receive blood from the body and lungs.</li>
-                <li><strong>Ventricles:</strong> The two lower chambers that pump blood out of the heart.</li>
-                <li><strong>Valves:</strong> Structures that ensure blood flows in one direction through the heart.</li>
-            </ul>
-            <p>Understanding the mechanics of the heart is crucial for developing an artificial heart that can replicate these functions while integrating AI technology for enhanced performance.</p>
-        </div>
-    </section>
+
     <section id="functionality">
-        <h2 class="toggle-button" onclick="toggleVisibility('functionality-content')">Functionality of the AI-Powered Heart</h2>
-        <div id="functionality-content" class="hidden">
-            <p>The AI-powered artificial heart is designed to mimic the natural functions of the heart while incorporating advanced technologies for improved performance. Its primary functionalities include:</p>
-            <ul>
-                <li><strong>Monitoring:</strong> Continuous monitoring of vital signs, including heart rate, blood pressure, and oxygen levels, ensures that any deviations from normal parameters are quickly identified.</li>
-                <li><strong>Data Analysis:</strong> The AI system analyzes collected data to detect patterns and predict potential issues before they become critical.</li>
-                <li><strong>Real-Time Adjustments:</strong> Based on data analysis, the device can adjust its pumping mechanism and medication dosages to optimize heart function and respond to the patient's current condition.</li>
-                <li><strong>Alerts and Notifications:</strong> The system can alert both the patient and healthcare providers in case of abnormalities, ensuring timely interventions.</li>
-                <li><strong>Patient Education:</strong> The device can provide feedback and information to patients, helping them understand their condition and how to manage it effectively.</li>
-            </ul>
-            <p>This comprehensive functionality aims to create a seamless experience for patients while enhancing their safety and health outcomes.</p>
+        <h2>Functionality of the AI-Powered Heart</h2>
+        <button class="collapsible">Detailed Functionality</button>
+        <div class="content">
+            <p>Heart rhythm monitoring...</p>
+            <p>Data analytics...</p>
+            <p>Patient interaction...</p>
+        </div>
+        <button class="collapsible">Real-World Applications</button>
+        <div class="content">
+            <p>Examples of usage...</p>
+        </div>
+        <button class="collapsible">Future Directions</button>
+        <div class="content">
+            <p>Speculations on future advancements...</p>
+        </div>
+        <button class="collapsible">Supporting Research</button>
+        <div class="content">
+            <p>Additional links...</p>
         </div>
     </section>
-    <section id="target-market">
-        <h2 class="toggle-button" onclick="toggleVisibility('target-market-content')">Target Market</h2>
-        <div id="target-market-content" class="hidden">
-            <p>The primary target market for our AI-powered artificial heart includes:</p>
-            <ul>
-                <li>Individuals diagnosed with heart diseases, including those awaiting heart transplants.</li>
-                <li>Patients with chronic heart conditions requiring continuous monitoring and management.</li>
-                <li>Healthcare institutions looking for advanced solutions to improve patient care and outcomes.</li>
-                <li>Insurance companies seeking innovative products that can reduce long-term healthcare costs associated with heart diseases.</li>
-            </ul>
-            <p>Our approach will focus on partnerships with hospitals, cardiology clinics, and healthcare providers to ensure widespread adoption and accessibility of the product. By collaborating with healthcare professionals, we aim to establish credibility and build a network that supports the integration of our technology into standard cardiac care practices.</p>
-        </div>
-    </section>
-    <section id="success-rate">
-        <h2 class="toggle-button" onclick="toggleVisibility('success-rate-content')">Projected Success Rate</h2>
-        <div id="success-rate-content" class="hidden">
-            <p>Based on initial research and clinical trials, we project an 81% success rate for our AI-powered artificial heart within the first two years of its implementation. This success is attributed to several factors:</p>
-            <ul>
-                <li><strong>Innovative Technology:</strong> The integration of AI allows for personalized treatment and monitoring, significantly improving patient outcomes.</li>
-                <li><strong>Proactive Management:</strong> The device's ability to predict and respond to potential complications ensures timely interventions, reducing the likelihood of severe health events.</li>
-                <li><strong>Collaboration with Healthcare Professionals:</strong> By working closely with medical teams, we can ensure that the product meets clinical standards and effectively addresses patient needs.</li>
-            </ul>
-            <p>This high success rate not only enhances patient trust but also presents a compelling case for healthcare institutions to adopt our technology.</p>
-        </div>
-    </section>
+
     <footer>
-        <p>Thank you for your time and consideration.</p>
-        <p>For further inquiries, please contact R.G.</p>
+        <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
+
     <script>
-        function toggleVisibility(contentId) {
-            const content = document.getElementById(contentId);
-            content.classList.toggle('hidden');
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
         }
     </script>
 </body>
